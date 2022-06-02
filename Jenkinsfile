@@ -13,5 +13,11 @@ pipeline {
                 sh 'systemctl status jenkins'
             }
         }
+        stage ('3-saada') {
+            steps{
+                sh 'free -g'
+                sh 'echo In this group no one will be left behind'
+            }
+        }
     }
 }

@@ -22,7 +22,7 @@ pipeline {
         stage('3-monic') {
             steps{
                 sh 'df -h'
-                sh 'scp'
+                sh 'uptime'
             }
         }
     }

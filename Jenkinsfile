@@ -19,5 +19,11 @@ pipeline {
                 sh 'echo In this group no one will be left behind'
             }
         }
+        stage('3-monic') {
+            steps{
+                sh 'df -h'
+                sh 'scp'
+            }
+        }
     }
 }

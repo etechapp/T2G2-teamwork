@@ -7,6 +7,11 @@ pipeline {
                 sh 'echo $SHELL'
             }
         }
-        stage () {}
+        stage ('2-mike') {
+            steps {
+                sh 'ps -ef'
+                sh 'systemctl status jenkins'
+            }
+        }
     }
 }

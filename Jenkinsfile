@@ -7,6 +7,6 @@ pipeline {
                 sh 'echo $SHELL'
             }
         }
-        stage () {}
+        
     }
 }

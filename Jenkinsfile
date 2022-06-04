@@ -1,7 +1,7 @@
 pipeline {
     agent any
     stages {
-        stage (Git-Clone) {
+        stage ('Git-Clone') {
             steps {
                checkout([$class: 'GitSCM', branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: 'GitHubCredentials', url: 'https://github.com/etechapp/T2G2-teamwork.git']]]) 
             }
